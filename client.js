@@ -474,8 +474,8 @@ paramikojs.SSHClient.prototype = {
     }
 
     var keyfiles = [];
-    var rsa_key = localFile.init('~/.ssh/id_rsa');
-    var dsa_key = localFile.init('~/.ssh/id_dsa');
+    var rsa_key = null;
+    var dsa_key = null;
     if (rsa_key && rsa_key.exists()) {
       keyfiles.push([paramikojs.RSAKey, rsa_key]);
     }
