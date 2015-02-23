@@ -1,3 +1,4 @@
+if (Components && Components.utils) {
 Components.utils.import("resource://services-sync/util.js");
 
 kryptos.cipher.nss3 = function(key, algorithm, mode, iv, counter) {
@@ -40,3 +41,4 @@ kryptos.cipher.nss3.prototype = {
     return kryptos.fromByteArray(plaintext);
   }
 };
+}
